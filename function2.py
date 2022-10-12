@@ -58,3 +58,15 @@ def change(x):
 change(wordlist)
 #원본을 복사해서 사용했기 때문에 원본은 그대로 JAM 출력
 print("함수 호출후 : {0}".format(wordlist))
+
+print("---불변형식---")
+a = 1.2
+print(id(a))
+a = 2.3
+print(id(a))
+
+print("---가변형식---")
+lst = [1,2,3]
+print(id(lst))
+lst.append(4)
+print(id(lst))
