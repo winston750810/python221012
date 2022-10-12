@@ -1,5 +1,6 @@
 # function2.py
 #교집합 문자를 리스트로 리턴
+from imghdr import tests
 from re import X
 
 
@@ -70,3 +71,21 @@ lst = [1,2,3]
 print(id(lst))
 lst.append(4)
 print(id(lst))
+
+print("---global---")
+g=1
+def testScope(a):
+    global g
+    g = 2
+    return g+a
+#호출
+testScope(1)
+print("함수호출 후 g:{0}".format(g))
+
+print("---기본값---")
+def times(a=10, b=20):
+    return a*b
+#호출
+print( times())
+print(times (5))
+print(times(5,6))
