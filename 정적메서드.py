@@ -1,3 +1,6 @@
+#Java, C#은 클래스나 구조체만 만들 수 있다.
+#파이썬은 함수도 만들고 클래스도 만들 수 있다.
+
 # 정적메서드.py
 class MyCalc(object):
     @staticmethod
