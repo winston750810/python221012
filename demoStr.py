@@ -14,3 +14,13 @@ print(strB.count("p" , 7) )
 print("MBC2580".isalnum())
 print("MBC:2580".isalnum())
 print("2580".isnumeric())
+
+u = "<<< spam and ham >>>"
+result = u.strip("<> ")
+print ( u )
+print ( result )
+result = result.replace("spam" , "spam egg")
+print( result )
+lst = result.split()
+print (lst)
+print (":)".join(lst))
